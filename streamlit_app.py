@@ -5,7 +5,7 @@ from hugchat.login import Login
 st.set_page_config(page_title="🤗💬 HugChat")
 
 with st.sidebar:
-    st.title('🤗💬 HugChat Side Bar Title')
+    st.title('🤗💬 HugChat')
     if ('EMAIL' in st.secrets) and ('PASS' in st.secrets):
         st.success('HuggingFace Login credentials already provided!', icon='✅')
         hf_email = st.secrets['EMAIL']

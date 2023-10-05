@@ -78,7 +78,7 @@ with input_container:
 # Response output
 ## Function for taking user prompt as input followed by producing AI generated responses
 def generate_response(prompt):
-    sign = Login(st.secrets[“email”], st.secrets[“password”])
+    sign = Login(st.secrets["email"], st.secrets["password"])
     cookies = sign.login()
     sign.saveCookies()
     chatbot = hugchat.ChatBot(cookies=cookies.get_dict())
